@@ -14,7 +14,7 @@ public class Principal {
 		System.out.println("|3) Elegir Tipos de Armas (Maximo 2)");
 		System.out.println("|4) Jugar!");
 		System.out.println("|5) Ayuda");
-		System.out.println(" Selecciona tu opcion");
+		System.out.println(" Selecciona tu opción");
 	}
 	
 	public void salidaEstandar(String str) {
