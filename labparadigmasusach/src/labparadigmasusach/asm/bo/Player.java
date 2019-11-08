@@ -1,25 +1,34 @@
 package labparadigmasusach.asm.bo;
 
+import labparadigmasusach.asm.model.Weapon;
+
+/**
+ * 
+ * @author alberto san martin
+ *
+ */
 public class Player {
-	
+
 	private Integer id;
 	private Integer posicion;
 	private Integer distMaximaMov;
 	private Integer vida;
-	private String  nombreEquipo;
-	
-	public Player(Integer id, Integer posicion, Integer distMaximaMov, Integer vida, String nombreEquipo) {
+	private String nombreEquipo;
+	private Weapon weapon;
+
+	public Player(Integer id, Integer posicion, Integer distMaximaMov, Integer vida, String nombreEquipo,
+			Weapon weapon) {
 		super();
 		this.id = id;
 		this.posicion = posicion;
 		this.distMaximaMov = distMaximaMov;
 		this.vida = vida;
 		this.nombreEquipo = nombreEquipo;
+		this.weapon = weapon;
 	}
 
-	enum TipoPlayer{
-		ALIADO,
-		ENEMIGO
+	enum TipoPlayer {
+		ALIADO, ENEMIGO
 	}
 
 	public Integer getId() {
@@ -62,10 +71,18 @@ public class Player {
 		this.nombreEquipo = nombreEquipo;
 	}
 
+	public Weapon getWeapon() {
+		return weapon;
+	}
+
+	public void setWeapon(Weapon weapon) {
+		this.weapon = weapon;
+	}
+
 	@Override
 	public String toString() {
 		return "Player [id=" + id + ", posicion=" + posicion + ", distMaximaMov=" + distMaximaMov + ", vida=" + vida
-				+ ", nombreEquipo=" + nombreEquipo + "]";
-	} 
-	
+				+ ", nombreEquipo=" + nombreEquipo + ", weapon=" + weapon + "]";
+	}
+
 }

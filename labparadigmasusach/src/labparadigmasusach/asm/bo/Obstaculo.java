@@ -1,5 +1,9 @@
 package labparadigmasusach.asm.bo;
-
+/**
+ * 
+ * @author alberto san martin
+ *
+ */
 public class Obstaculo {
 	
 	private Integer posicion;

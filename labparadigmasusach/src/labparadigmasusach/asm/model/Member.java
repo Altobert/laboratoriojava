@@ -3,7 +3,11 @@ package labparadigmasusach.asm.model;
 import java.util.List;
 
 import labparadigmasusach.asm.bo.Player;
-
+/**
+ * 
+ * @author alberto san martin
+ *
+ */
 public class Member {
 	
 	private List<Player> aliado;

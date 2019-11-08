@@ -1,5 +1,10 @@
 package labparadigmasusach.asm.main;
 
+/**
+ * 
+ * @author alberto san martin
+ *
+ */
 public class Principal {
 
 	public static void main(String[] args) {
